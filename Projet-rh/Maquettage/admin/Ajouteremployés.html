@@ -164,18 +164,25 @@
                       <label for="exampleInputPassword1">Date de naissance</label>
                       <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Date de naissance">
                     </div>
-                    <div class="form-group">
-                        <label for="exampleInputEmail1">Département</label>
-                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Département">
-                      </div>
+                         <!-- select -->
+                         <div class="form-group">
+                          <label>Profession</label>
+                          <select class="form-control">
+                            <option>Formateur</option>
+                            <option>Directeur</option>
+                            <option>Secrétaire général</option>
+                            <option>Agent de sécurité</option>
+                            <option>Femme de ménage</option>
+                          </select>
                           <!-- select -->
                           <div class="form-group">
                             <label>Filiére</label>
                             <select class="form-control">
-                              <option>Dévéloppement Web</option>
-                              <option>Dévéloppement Mobile</option>
+                              <option>Devéloppement Web</option>
+                              <option>Devéloppement Mobile</option>
                               <option>Anglais</option>
                               <option>Soft Skills</option>
+                              <option>Entreprenariat</option>
                             </select>
                           </div>
                           <div class="form-group">
@@ -185,6 +192,15 @@
                           <!-- Date -->
                 <div class="form-group">
                     <label>Date début</label>
+                      <div class="input-group date" id="reservationdate" data-target-input="nearest">
+                          <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
+                          <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
+                              <div class="input-group-text"><i class="fa fa-calendar"></i></div>
+                          </div>
+                      </div>
+                  </div>
+                  <div class="form-group">
+                    <label>Date fin</label>
                       <div class="input-group date" id="reservationdate" data-target-input="nearest">
                           <input type="text" class="form-control datetimepicker-input" data-target="#reservationdate"/>
                           <div class="input-group-append" data-target="#reservationdate" data-toggle="datetimepicker">
